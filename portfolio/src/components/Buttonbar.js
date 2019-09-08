@@ -1,40 +1,62 @@
-import React from 'react';import Container from '@material-ui/core/Container';
+import React from 'react';
+import Container from '@material-ui/core/Container';
 import Biobutton from './Biobutton'
 import Portfoliobutton from './Portfoliobutton'
 import Contactbutton from './Contactbutton'
-import Linkinbutton from './Linkinbutton'
+import Linkedinbutton from './Linkedinbutton'
 import Gitbutton from './Gitbutton'
 import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
 
+export default function FullWidthGrid() {
+  const classes = useStyles();
 
-function Buttonbar(){
-    return (
-        <div className = 'buttonbar'>
-            <div className = 'buttons'>
-                <Link to ='/bio'>
+  return (
+    <div id = 'buttonbar' className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item xs={3} sm={3}>
+          <Typography gutterBottom variant="h3" component="h2">
+            <Link to ='/bio'>
                 <Biobutton className ="buttons" />
-                </Link>
-                <Link to ='/portfolio'>
+            </Link>
+          </Typography>
+          <Typography gutterBottom variant="h3" component="h2">
+            <Link to ='/portfolio'>
                 <Portfoliobutton className ="buttons"/>
-                </Link>
-                <Link to ='/contact'>
+            </Link>
+          </Typography>
+          <Typography gutterBottom variant="h3" component="h2">
+            <Link to ='/contact'>
                 <Contactbutton className ="buttons"/>
-                </Link>
-                <Link>
-                <Linkinbutton className ="buttons"/>
-                </Link>
-                <Link>
+            </Link>
+          </Typography>
+          <Typography gutterBottom variant="h3" component="h2">
+            <Link to = '/linkedin'>
+                <Linkedinbutton className ="buttons"/>
+            </Link>
+          </Typography>
+          <Typography gutterBottom variant="h3" component="h2">
+            <Link to = '/github'>
                 <Gitbutton className ="buttons"/>
-                </Link>
-            </div>
-        </div>
-           
-      );
+            </Link>
+          </Typography>
+        </Grid>
+      </Grid>
+    </div>
+  );
 }
-  
-    
-
-
-export default Buttonbar;

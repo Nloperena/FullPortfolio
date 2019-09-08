@@ -1,16 +1,12 @@
 import React from 'react';
-import './App.scss';
-import Buttonbar from '../src/components/Buttonbar'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
-
-function Portfolio() {
+export default function SimpleContainer() {
   return (
-    <div>
-        <Buttonbar style ={{backgroundColor: 'white'}} />
-        <h1 >Portfolio</h1>
-     
-    </div>
+   <div>
+     YEET
+   </div>
   );
 }
-
-export default Portfolio;

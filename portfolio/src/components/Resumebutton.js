@@ -1,17 +1,16 @@
 import React from 'react';
 import {AwesomeButton} from 'react-awesome-button';
 import 'react-awesome-button/dist/themes/theme-rickiest.css';
-import SVG from './Giticon';
 
-function Gitbutton() {
+function ResumeButton() {
     return (
-      <AwesomeButton 
-        className ='buttonproperties'
+      <AwesomeButton  className ='buttonproperties'
+        size="small"
+        
       >
-      Github
+          Resume
       </AwesomeButton>
     );
   }
 
-  export default Gitbutton;
-  
+  export default ResumeButton;

@@ -5,6 +5,16 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import Biobutton from './Biobutton'
+import Portfoliobutton from './Portfoliobutton'
+import Contactbutton from './Contactbutton'
+import Linkedinbutton from './Linkedinbutton'
+import Gitbutton from './Gitbutton'
+import { Link } from 'react-router-dom'
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -13,6 +23,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    textAlign: 'center',
   },
   title: {
     flexGrow: 1,
@@ -25,15 +36,23 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-           
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Nicholas Loperena
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
+        <Container>
+            <Link to ='/bio'>
+                <Biobutton className ="buttons" />
+            </Link>
+            <Link to ='/portfolio'>
+                <Portfoliobutton className ="buttons"/>
+            </Link>
+            <Link to ='/contact'>
+                <Contactbutton className ="buttons"/>
+            </Link>
+            <Link>
+                <Linkedinbutton className ="buttons"/>
+            </Link>
+            <Link>
+                <Gitbutton className ="buttons"/>
+            </Link>
+        </Container>
       </AppBar>
     </div>
   );
