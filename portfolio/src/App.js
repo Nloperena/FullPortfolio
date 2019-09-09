@@ -24,7 +24,7 @@ class App extends Component {
         
         <div className="App">
           <ButtonAppBar />
-          <br></br>
+          
           <Dashboard />
         
 

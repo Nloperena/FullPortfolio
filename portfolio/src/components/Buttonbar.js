@@ -10,6 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import '../App.scss'
 
 
 const useStyles = makeStyles(theme => ({
@@ -30,7 +31,7 @@ export default function FullWidthGrid() {
     <div id = 'buttonbar' className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={3} sm={3}>
-          <Typography gutterBottom variant="h3" component="h2">
+          <Typography gutterBottom >
             <Link to ='/bio'>
                 <Biobutton className ="buttons" />
             </Link>

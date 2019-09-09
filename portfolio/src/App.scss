@@ -1,7 +1,9 @@
 body {
   color:white;
-  background-image: url(../src/media/space.jpg);
-  
+  background-image: url(../src/media/minimalist-purple-abstract-landscape-a199.jpg);
+  font-family: 'Oswald', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -13,18 +15,14 @@ body {
 
 
 #buttonbar {
-  border-right: solid;
-  border-bottom: solid;
-  border-top:solid;
-  border-color: white;
+border-radius: 3rem;
+  top:15rem;
   position: absolute;
   height: 20rem;
   width: 6rem;
   background-image: linear-gradient(to top left, #9809EB, #CB00F3);
-  color: #eee;
   padding: 3rem;
-  border-bottom-right-radius: 3rem;
-  border-top-right-radius: 3rem;
+
   overflow: hidden;
 }
 
@@ -41,13 +39,14 @@ body {
   border-radius: 3rem;
 }
 
-#biocontent {
-  margin-top:3.4rem;
+#biocontent { 
+  margin-top:6.4rem;
   border-radius: 1.7rem;
-  background-image: linear-gradient(to top left, #9809EB, #CB00F3);
+  background-image: linear-gradient(to top , #9809EB, rgb(219, 42, 255));
   color:white;
-  padding:1rem;
-  box-shadow: 2px 2px 1px 4px #9909EB;
+  padding:4rem;
+  opacity: 0.96;
+  box-shadow:5px 1px 0px 1px #9909EB;
   
 }
 
@@ -57,9 +56,29 @@ body {
   color: #9809EB;
   padding:1.5rem;
   
+  
 }
 
 #credly {
   margin-top: -10rem;
-  margin-left: 15rem;
+  margin-left: 11rem;
+}
+
+#yeet {
+  background-image: linear-gradient(white, #d767f3);
+  border-radius: 3rem;
+  padding: 3rem;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1rem;
+ 
+}
+
+.within {
+  opacity:1;
+  font-size:9rem;
+}
+
+.buttonproperties{
+ font-family: 'Oswald', sans-serif;
 }

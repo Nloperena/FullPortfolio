@@ -28,7 +28,7 @@ export default function MediaCard() {
        <Grid container>
          <Grid item sm={6}>
            <br></br>
-           <Typography variant= 'h4' align ='center'>
+           <Typography  align ='center'>
              Nicholas Loperena
            </Typography>
          </Grid>

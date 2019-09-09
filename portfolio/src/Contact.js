@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   },
   spacing: {
     marginTop: theme.spacing (2)
-  }
+  },
 }));
 
 
@@ -25,25 +25,26 @@ function Contact() {
       {/* FIRST GRID CONTAINER */}
       <Grid container>
       {/* FIRST GRID ROW */}
+        <Paper id ='yeet'>
           <Grid item sm={12}>
-            <Typography variant= 'h4' type = 'textPrimary' align ='center' >
-              Nicholas Michael Loperena
+            <Typography className ='within' type = 'textPrimary' align ='center' >
+              <h2>Nicholas Michael Loperena</h2>
             </Typography>
           </Grid>
           <Grid item sm={12}>
-            <Typography variant ='h6' type ='textSecondary' align ='center' gutterBottom>
+            <Typography variant ='p' type ='textSecondary' align ='center' gutterBottom>
             React Web Developer
             </Typography>
           </Grid>
+          </Paper>
          <List>
             <ListItem button className = {classes.spacing}>
-              <ListItemText primary = 'Email' />
+              Cell: 407-790-5891
+              
             </ListItem>
             <Divider varient = 'middle'/>
             <ListItem button className = {classes.spacing} >
-              <Typography variant= 'h6' align ='center'>
-                Phone Number
-              </Typography>
+              Email: NicholasLoperena@gmail.com
             </ListItem>
             <Divider varient = 'middle'/>
            <br></br>
