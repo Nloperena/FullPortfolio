@@ -5,13 +5,11 @@ import Grid from '@material-ui/core/Grid';
 import Nico from '../media/Nico.jpg'
 
 const useStyles = makeStyles({
-  avatar: {
-    margin: 10,
-  },
+
   bigAvatar: {
-    margin: 10,
-    width: 60,
-    height: 60,
+    marginBottom: 30,
+    width: 200,
+    height: 200,
   },
 });
 

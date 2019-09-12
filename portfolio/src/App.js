@@ -14,6 +14,7 @@ import Contact from './Contact';
 import SimpleContainer from './Portfolio'
 import Grid from '@material-ui/core/Grid'
 import LeftPane from './LeftPane'
+import Video from './components/video';
 
 
 class App extends Component {
@@ -23,10 +24,13 @@ class App extends Component {
     return(
         
         <div className="App">
-          <ButtonAppBar />
+         <Video>
           
+          </Video>
+          <ButtonAppBar />
           <Dashboard />
-        
+          
+          
 
 
          

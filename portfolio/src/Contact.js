@@ -21,7 +21,7 @@ function Contact() {
   return (
     <div>
       {/* PAPER IS THE CONTAINER */}
-      <Paper className ={classes.root} id = 'biocontent'>
+      <Paper className ={classes.root} id = 'contactcontent'>
       {/* FIRST GRID CONTAINER */}
       <Grid container>
       {/* FIRST GRID ROW */}

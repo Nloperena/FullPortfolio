@@ -25,21 +25,23 @@ export default function MediaCard() {
   return (
     <Card id= 'biocontent'>
       <br></br>
+      {/* FIRST ROW */}
        <Grid container>
          <Grid item sm={6}>
            <br></br>
            <Typography  align ='center'>
-             Nicholas Loperena
+           <h1>Nicholas Michael Loperena</h1>
            </Typography>
          </Grid>
          <Grid item sm={6}>
-          
              <MyAvatar id ='me' src ={Nico} />
          </Grid>
+  
+      {/* SECOND ROW   */}
          <Grid container id ='component-content'>
-         <Grid item sm={10} align = 'center'>
-           <Typography variant= 'p' align = 'center'>
-           Web Developer with a background in interior design and pharmacy. Educated and developed my skills at the University of Central Florida Ed  in HTML, CSS, Javascript and other technologies. Strong critical thinking skills, visual and a people person. Personal strengths in style, creativity, determination and maintaining a positive attitude.
+         <Grid item sm={12} align = 'center'>
+           <Typography variant= 'body1' align = 'center'>
+           Web Developer with a background in interior design and pharmacy. Educated and developed my skills at the University of Central Florida Ed  in HTML, CSS, Javascript and other technologies. Strong critical thinking and people skills. Personal strengths in style, creativity, determination and maintaining a positive attitude.
            </Typography>
          </Grid>
          </Grid>

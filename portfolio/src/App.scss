@@ -1,11 +1,16 @@
-body {
-  color:white;
-  background-image: url(../src/media/minimalist-purple-abstract-landscape-a199.jpg);
+html {
   font-family: 'Oswald', sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
 
 }
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity:1;
+}
+
 
 .App {
   text-align: center;
@@ -15,15 +20,15 @@ body {
 
 
 #buttonbar {
-border-radius: 3rem;
+  border-radius: 2rem;
   top:15rem;
   position: absolute;
   height: 20rem;
   width: 6rem;
-  background-image: linear-gradient(to top left, #9809EB, #CB00F3);
+  background-image: linear-gradient(to top left,  #556b2f , #759b29 );
   padding: 3rem;
-
   overflow: hidden;
+  opacity: 0.9;
 }
 
 .buttons {
@@ -34,42 +39,55 @@ border-radius: 3rem;
 
 
 
-#me {
-  width:150%;
-  border-radius: 3rem;
-}
+
+
 
 #biocontent { 
   margin-top:6.4rem;
   border-radius: 1.7rem;
-  background-image: linear-gradient(to top , #9809EB, rgb(219, 42, 255));
+  background-image: linear-gradient(to top , #556b2f , #759b29 );
+  color:white;
+  padding:1rem;
+  opacity: 0.9;
+  box-shadow: 3.8px 2px 0px 0px #556b2f;
+  height: 30rem;
+  
+}
+
+#contactcontent { 
+  margin-top:6.4rem;
+  border-radius: 1.7rem;
+  background-image: linear-gradient(to top , #556b2f , #759b29 );
   color:white;
   padding:4rem;
-  opacity: 0.96;
-  box-shadow:5px 1px 0px 1px #9909EB;
+  opacity: 0.9;
+  box-shadow: 3.8px 2px 0px 0px #556b2f ;
   
 }
 
 #component-content {
-  background-color:white;
-  border-radius: 2rem;
-  color: #9809EB;
-  padding:1.5rem;
-  
-  
+  background-image: linear-gradient(white, rgb(247, 210, 196));
+  border-radius: 3rem;
+  padding: 2rem;
+  width: 100%;
+  opacity: 1;
+  font-size: 1rem;
+  color: black;
 }
 
 #credly {
-  margin-top: -10rem;
+  opacity: 1;
+  margin-top: -9rem;
   margin-left: 11rem;
+  
 }
 
 #yeet {
-  background-image: linear-gradient(white, #d767f3);
+  background-image: linear-gradient(white, rgb(247, 210, 196));
   border-radius: 3rem;
   padding: 3rem;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   font-size: 1rem;
  
 }
