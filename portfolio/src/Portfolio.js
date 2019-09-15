@@ -2,8 +2,10 @@ import React from 'react';
 import './App.scss';
 import { Typography, Divider, Container, List, ListItem, ListItemText, Card, Grid, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import Resumebutton from './components/Resumebutton'
-import Credly from './media/badge.png'
+import Flowjo from './components/PortfolioCards/Flowjo';
+import ChatApp from './components/PortfolioCards/Chatapp';
+import Pupper from './components/PortfolioCards/Pupper';
+import Creadventure from './components/PortfolioCards/Creadventure';
 
 
 const useStyles = makeStyles(theme => ({
@@ -11,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(3, 2),
   },
   spacing: {
-    marginTop: theme.spacing (2)
+    marginTop: theme.spacing (1)
   },
 }));
 
@@ -21,45 +23,50 @@ function Portfolio() {
   return (
     <div>
       {/* PAPER IS THE CONTAINER */}
-      <Paper className ={classes.root} id = 'contactcontent'>
+      <Paper className ={classes.root} id = 'portfolio-content'>
       {/* FIRST GRID CONTAINER */}
       <Grid container>
       {/* FIRST GRID ROW */}
-        <Paper id ='yeet'>
+        <Paper id ='portfolio-header'>
           <Grid item sm={12}>
             <Typography className ='within' type = 'textPrimary' align ='center' >
-              <h2>Nicholas Michael Loperena</h2>
-            </Typography>
-          </Grid>
-          <Grid item sm={12}>
-            <Typography variant ='p' type ='textSecondary' align ='center' gutterBottom>
-            React Web Developer
+              <h2>Portfolio</h2>
             </Typography>
           </Grid>
           </Paper>
+
+
+          {/* FIRST ROW */}
+
+          <Grid item sm = {6}>
          <List>
             <ListItem button className = {classes.spacing}>
-              Cell: 407-790-5891
+              <Pupper />
               
             </ListItem>
             <Divider varient = 'middle'/>
             <ListItem button className = {classes.spacing} >
-              Email: NicholasLoperena@gmail.com
+              <ChatApp />
+            </ListItem>
+            
+           <br></br>
+
+          {/* SECOND ROW */}
+         </List>
+         </Grid>
+          <Grid item sm = {6}>
+         <List>
+            <ListItem button className = {classes.spacing}>
+              <Creadventure />
+              
             </ListItem>
             <Divider varient = 'middle'/>
-           <br></br>
+            <ListItem button className = {classes.spacing} >
+              <Flowjo />
+            </ListItem>
          </List>
+         </Grid>
       {/* END OF GRID ROW */}
-      <Grid container>
-           <Grid item sm ={3}>
-                <Resumebutton />
-           </Grid>
-           <Grid item sm ={9}>
-              
-                <img src ={Credly} id ='credly' atl= 'credentials' />
-
-           </Grid>
-           </Grid>
              
 
         {/* NEW CONTAINER SO NEW ROW WITHIN PAPER */}

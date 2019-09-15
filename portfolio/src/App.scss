@@ -42,7 +42,7 @@ html {
 
 
 
-#biocontent { 
+#bio-content { 
   margin-top:6.4rem;
   border-radius: 1.7rem;
   background-image: linear-gradient(to top , #556b2f , #759b29 );
@@ -54,7 +54,7 @@ html {
   
 }
 
-#contactcontent { 
+#contact-content { 
   margin-top:6.4rem;
   border-radius: 1.7rem;
   background-image: linear-gradient(to top , #556b2f , #759b29 );
@@ -63,6 +63,17 @@ html {
   opacity: 0.9;
   box-shadow: 3.8px 2px 0px 0px #556b2f ;
   
+}
+#portfolio-content { 
+  margin-top:1.2rem;
+  border-radius: 1.7rem;
+  background-image: linear-gradient(to top , #556b2f , #759b29 );
+  color:white;
+  padding-left:4rem;
+  padding-right:4rem;
+  opacity: 0.9;
+  box-shadow: 3.8px 2px 0px 0px #556b2f ;
+  height:50rem;
 }
 
 #component-content {
@@ -92,6 +103,27 @@ html {
  
 }
 
+#portfolio-header {
+  background-image: linear-gradient(white, rgb(247, 210, 196));
+  border-radius: 1.4rem;
+  padding: 0rem;
+  width: 100%;
+  opacity: 1;
+  font-size: 1rem;
+ 
+}
+
+#project-card {
+  background-image: linear-gradient(white,  white, rgb(247, 210, 196));
+  border-radius: 1.8rem;
+  width:100%;
+}
+#project-card-pupper {
+  background-image: linear-gradient(white,  white, rgb(247, 210, 196));
+  border-radius: 1.8rem;
+  width:100%;
+}
+
 .within {
   opacity:1;
   font-size:9rem;
@@ -99,4 +131,8 @@ html {
 
 .buttonproperties{
  font-family: 'Oswald', sans-serif;
+}
+
+.Projectcard {
+  max-width: 200px;
 }

@@ -23,14 +23,15 @@ export default function MediaCard() {
   const classes = useStyles();
 
   return (
-    <Card id= 'biocontent'>
+    <Card id= 'bio-content'>
       <br></br>
       {/* FIRST ROW */}
        <Grid container>
          <Grid item sm={6}>
            <br></br>
            <Typography  align ='center'>
-           <h1>Nicholas Michael Loperena</h1>
+           <h1>Nicholas 
+             (Nico) Loperena</h1>
            </Typography>
          </Grid>
          <Grid item sm={6}>
