@@ -31,7 +31,7 @@ export default function FullWidthGrid() {
     <div id = 'buttonbar' className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={3} sm={3}>
-          <Typography gutterBottom >
+          <Typography gutterBottom variant = 'h3' component = 'h2'>
             <Link to ='/bio'>
                 <Biobutton className ="buttons" />
             </Link>
