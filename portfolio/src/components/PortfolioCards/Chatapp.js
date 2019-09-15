@@ -8,6 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Chat from '../../media/chat.png';
+import { Link } from 'react-router-dom';
+import CodeButton from '../Codebutton';
 
 const useStyles = makeStyles({
   card: {
@@ -38,7 +40,9 @@ export default function ChatApp() {
           </Typography>
         </CardContent>
       <CardActions>
-     {/* {BUTTON HERE} */}
+      <Link to ='ChatApp' target = '_blank'>
+      <CodeButton />
+      </Link>
       </CardActions>
     </Card>
   );

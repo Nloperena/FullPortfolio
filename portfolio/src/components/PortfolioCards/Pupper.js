@@ -8,6 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Shiba from '../../media/Shiba.jpg';
+import { Link } from 'react-router-dom'
+import CodeButton from '../Codebutton';
 
 const useStyles = makeStyles({
   card: {
@@ -20,8 +22,9 @@ export default function Pupper() {
   const classes = useStyles();
 
   return (
+    
     <Card className={classes.card} id ='project-card-pupper'>
-  
+      
         <CardMedia
           component="img"
           alt="Shiba Inu Icon"
@@ -38,8 +41,11 @@ export default function Pupper() {
           </Typography>
         </CardContent>
       <CardActions>
-     {/* {BUTTON HERE} */}
+      <Link to ='Pupper' target = '_blank'>
+      <CodeButton />
+      </Link>
       </CardActions>
     </Card>
+    
   );
 }

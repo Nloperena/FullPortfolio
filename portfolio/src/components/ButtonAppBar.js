@@ -46,10 +46,10 @@ export default function ButtonAppBar() {
             <Link to ='/contact'>
                 <Contactbutton className ="buttons"/>
             </Link>
-            <Link>
+            <Link to = '/linkedin' target='_blank'>
                 <Linkedinbutton className ="buttons"/>
             </Link>
-            <Link>
+            <Link to = '/github' target ='_blank'>
                 <Gitbutton className ="buttons"/>
             </Link>
         </Container>

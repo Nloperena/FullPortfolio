@@ -7,7 +7,6 @@ import Linkedinbutton from './Linkedinbutton'
 import Gitbutton from './Gitbutton'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import '../App.scss'
@@ -47,12 +46,12 @@ export default function FullWidthGrid() {
             </Link>
           </Typography>
           <Typography gutterBottom variant="h3" component="h2">
-            <Link to = '/linkedin'>
+            <Link to = '/linkedin' target='_blank'>
                 <Linkedinbutton className ="buttons"/>
             </Link>
           </Typography>
           <Typography gutterBottom variant="h3" component="h2">
-            <Link to = '/github'>
+            <Link to = '/github' target ='_blank'>
                 <Gitbutton className ="buttons"/>
             </Link>
           </Typography>

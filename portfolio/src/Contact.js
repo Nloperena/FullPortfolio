@@ -4,6 +4,7 @@ import { Typography, Divider, Container, List, ListItem, ListItemText, Card, Gri
 import { makeStyles } from '@material-ui/core/styles';
 import Resumebutton from './components/Resumebutton'
 import Credly from './media/badge.png'
+import Resume from './media/Resume_1.DOCX';
 
 
 const useStyles = makeStyles(theme => ({
@@ -52,7 +53,9 @@ function Contact() {
       {/* END OF GRID ROW */}
       <Grid container>
            <Grid item sm ={3}>
+              <a href = {Resume} download>
                 <Resumebutton />
+                </a>
            </Grid>
            <Grid item sm ={9}>
               
